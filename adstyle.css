@@ -1,0 +1,152 @@
+
+
+/* Desktop */
+@media (min-width: 728px) {
+    .body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    }
+
+    .ad-banner {
+    display: flex;
+    width: 728px;
+    height: 90px;
+    background-color: #e57373;
+    }
+
+    .ad-section {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    }
+
+    .ad-section.left img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 4;
+    }
+
+    .centro {
+    align-items: center;
+    position: relative; 
+    z-index: 2; 
+    }
+
+    .centro img {
+    height: 100%; 
+    width: auto;
+    object-fit: contain;
+    margin-left: -10px;
+    }
+
+    img {
+    height: 90px; 
+    width: auto;
+    object-fit: contain;
+    }
+
+    .boton{
+        margin: auto;
+        padding: 5px 10px;
+        background-color: transparent;
+        border: 2px solid #f4e1a1;
+        font-family: 'futura', sans-serif;
+        border-radius: 5px;
+        }
+    
+        .boton a{
+        text-decoration: none;
+        color: #f4e1a1;
+        }
+    
+        .boton:hover a {
+        background-color: #f4e1a1;
+        color: #e57373;}
+
+   .ad-bottom, .ad-top {
+    display: none
+}
+}
+
+/* Celular */
+@media (max-width: 728px) {
+    
+    .ad-section.left, .centro, .piernas, .boton{
+        display: none;
+    }
+     
+    .body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ebbaab;
+      }
+      
+      .ad-banner {
+        width: 300px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #ebbaab
+      }
+      
+      .ad-top {
+        flex: 2;
+        background-color: #9ebda5;
+      }
+      
+      .ad-top img {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+        position: relative;
+        margin-top: 10px;
+      }
+
+
+      .ad-bottom {
+        flex: 1;
+        background-color: #ebbaab;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-top: 30px;
+
+ .boton-bottom {
+    margin: auto;
+    padding: 7px 15px;
+    background-color: #da6567;
+    color: #f4e1a1;
+    font-family: 'futura', sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+    }
+
+  .boton-bottom a {
+    text-decoration: none;
+    color: #f4e1a1;
+    }
+
+   .boton-bottom:hover a {
+    background-color: #f4e1a1;
+    color: #da6567;}
+
+} 
+
+
+
+}
